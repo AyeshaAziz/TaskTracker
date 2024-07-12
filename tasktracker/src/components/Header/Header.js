@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import Logo from "../assets/logo.png";
-import { Themes } from "../utilities/themes.js";
+import Logo from "../../assets/logo.png";
+import { Themes } from "../../utilities/themes.js";
+import "./Header.css";
 
 const TITLE = "Task Tracker";
 const CLASS_ATTRIBUTE = "class";

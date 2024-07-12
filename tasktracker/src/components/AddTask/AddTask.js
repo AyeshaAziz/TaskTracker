@@ -1,6 +1,8 @@
+import "./AddTask.css";
+
 const EMPTY_STRING = "";
-const MAX_LENGTH = 25;
-const ADD_TASK_LABEL = "Add Task";
+const MAX_LENGTH = 100;
+const ADD_TASK_LABEL = "Add";
 const UPDATE_TASK_LABEL = "Update";
 
 export const AddTask = ({ task, setTask, taskList, setTaskList }) => {
@@ -33,13 +35,15 @@ export const AddTask = ({ task, setTask, taskList, setTaskList }) => {
     const value = event.target.task.value;
     const timestamp = `${date.toLocaleTimeString()} ${date.toLocaleDateString()}`;
     const newId = date.getTime();
-    task.id? updateTaskList(value, timestamp): addTask(taskList, newId, value, timestamp);
+    task.id
+      ? updateTaskList(value, timestamp)
+      : addTask(taskList, newId, value, timestamp);
     setTask({});
   };
   return (
     <section className="addTask">
       <form onSubmit={handleSubmit}>
-        <input
+        <input className="addTaskInput"
           type="text"
           name="task"
           value={task.name || EMPTY_STRING}
@@ -48,7 +52,9 @@ export const AddTask = ({ task, setTask, taskList, setTaskList }) => {
           maxLength={MAX_LENGTH}
           onChange={(event) => setTask({ ...task, name: event.target.value })}
         />
-        <button type="submit">{!task.id? ADD_TASK_LABEL: UPDATE_TASK_LABEL}</button>
+        <button className="submitBtn" type="submit">
+          {!task.id ? ADD_TASK_LABEL : UPDATE_TASK_LABEL}
+        </button>
       </form>
     </section>
   );

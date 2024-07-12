@@ -1,0 +1,44 @@
+header{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 70px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+  }
+  
+ .logo{
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img{
+    max-width: 40px;
+    cursor: pointer;
+  }
+  
+  .logo span{
+    font-size: 22px;
+    margin-left: 7px;
+    cursor: pointer;
+    color: #525252;
+  }
+  
+  .themeSelector span{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    border: 1px solid #dfdfdf;
+  }
+  
+  .themeSelector .activeTheme{
+    height: 30px;
+    width: 30px;
+  }
+  

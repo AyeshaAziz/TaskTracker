@@ -1,7 +1,7 @@
 import { useState, useEffect} from "react";
-import { Header } from "./components/Header";
-import { AddTask } from "./components/AddTask";
-import { TaskList } from "./components/TaskList";
+import { Header } from "./components/Header/Header";
+import { AddTask } from "./components/AddTask/AddTask";
+import { TaskList } from "./components/TaskList/TaskList";
 import "./App.css";
 const TASK_LIST_LABEL = "tasklist";
 function App() {

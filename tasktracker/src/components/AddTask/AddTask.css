@@ -1,0 +1,45 @@
+.addTask {
+  padding: 20px 15px;
+  background-color: #ffffff;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+form {
+  display: flex;
+  gap: 7px;
+}
+
+.addTaskInput {
+  flex-grow: 1;
+  padding: 5px 5px;
+  border: 1px solid #eaeaea;
+  font-size: var(--font-size);
+  border-radius: var(--border-radius);
+}
+
+.addTaskInput:focus {
+  outline: 0.5px solid #eaeaea;
+}
+
+.submitBtn {
+  background-color: #0354b0;
+  color: #ffffff;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-size: var(--font-size);
+  border-radius: var(--border-radius);
+}
+
+.submitBtn:hover {
+  background-color: #0354b0;
+}
+
+@media (max-width: 370px) {
+  .addTask form {
+    flex-flow: column;
+  }
+}

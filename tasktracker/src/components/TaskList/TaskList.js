@@ -1,3 +1,5 @@
+import "./TaskList.css";
+
 const TASK_LIST_LABEL = "Tasks";
 const CLEAR_ALL_BUTTON = "Clear All";
 
